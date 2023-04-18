@@ -16,7 +16,7 @@ function whatsappClient() {
     client.initialize();
 
     client.on("qr", (qr) => {
-        qrcode.generate(qr, { small: true });
+        qrcode.generate(qr, { large: true });
     });
 
     client.on("authenticated", () => {
